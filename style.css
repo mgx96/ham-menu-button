@@ -1,0 +1,145 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url("./background.jpg");
+    background-size: cover;
+}
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: white;
+}
+
+.navMenu{
+    --button-color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-line {
+    transition: stroke-dasharray .7s,stroke-dashoffset .7s;
+    transition-delay: .12s;
+    stroke-width: 3;
+    stroke-linecap: round;
+}
+
+.hamburger.rotate{
+    transform: rotate(45deg);
+}
+
+.hamburger.rotate-45{
+    transform: rotate(-45deg);
+}
+
+.menu-line.top.v1 {
+    stroke-dasharray: 40 139;
+}
+
+.menu-line.bottom.v1 {
+    stroke-dasharray: 40 180;
+}
+
+.menu-line.active.top.v1 {
+    stroke-dashoffset: -98px;
+}
+
+.menu-line.active.bottom.v1 {
+    stroke-dashoffset: -138px;
+}
+
+.menu-line.bottom.v2 , .menu-line.top.v2{
+    stroke-dasharray: 40 121;
+}
+
+.menu-line.bottom.active.v2 , .menu-line.top.active.v2{
+    stroke-dashoffset: -68px;
+}
+
+.menu-line.top.v3{
+    stroke-dasharray: 40 172;
+}
+
+.menu-line.middle.v3{
+    stroke-dasharray: 40 111;
+}
+
+.menu-line.bottom.v3{
+    stroke-dasharray: 40 172;
+}
+
+.menu-line.top.active.v3{
+    stroke-dashoffset: -132px;
+}
+
+.menu-line.middle.active.v3{
+    stroke-dashoffset: -71px;
+}
+
+.menu-line.bottom.active.v3{
+    stroke-dashoffset: -132px;
+}
+
+.menu-line.top.v4{
+    stroke-dasharray: 40 82;
+}
+
+.menu-line.middle.v4{
+    stroke-dasharray: 40 111;
+}
+
+.menu-line.bottom.v4{
+    stroke-dasharray: 40 161;
+}
+
+.menu-line.top.active.v4{
+    stroke-dasharray: 17 82;
+    stroke-dashoffset: -62px;
+}
+
+.menu-line.middle.active.v4{
+    stroke-dashoffset: 23px;
+}
+
+.menu-line.bottom.active.v4{
+    stroke-dashoffset: -83px;
+}
+
+
+.menu-line.top.v5{
+    stroke-dasharray: 40 160;
+}
+
+.menu-line.middle.v5{
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform .5s;
+}
+
+.menu-line.bottom.v5{
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform .5s , stroke-dashoffset .5s;
+}
+
+.menu-line.top.active.v5{
+    stroke-dashoffset: -64px;
+}
+
+.menu-line.middle.active.v5{
+    transform: rotate(90deg);
+}
+
+.menu-line.bottom.active.v5{
+    stroke-dashoffset: -64px;
+}
