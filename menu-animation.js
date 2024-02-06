@@ -7,17 +7,16 @@ document.querySelector('.hamburger').addEventListener('click', function(){
     midLine.removeAttribute('d');
     botLine.removeAttribute('d');
 
+    document.querySelector('.hamburger').classList.remove('rotate');
+    
     topLine.classList.remove('v1', 'v2', 'v3', 'v4', 'v5');
     midLine.classList.remove('v1', 'v2', 'v3', 'v4', 'v5');
     botLine.classList.remove('v1', 'v2', 'v3', 'v4', 'v5');
+    
 
     void topLine.offsetWidth;
     void midLine.offsetWidth;
     void botLine.offsetWidth;
-
-    topLine.classList.toggle('active');
-    midLine.classList.toggle('active');
-    botLine.classList.toggle('active');
 
     var animationVersion = Math.floor(Math.random() * 5) + 1;
 
@@ -39,6 +38,7 @@ document.querySelector('.hamburger').addEventListener('click', function(){
             topLine.classList.toggle('v2');
             midLine.classList.toggle('v2');
             botLine.classList.toggle('v2');
+            document.querySelector('.hamburger').classList.toggle('rotate');
             break;
 
         case 3:
@@ -66,8 +66,13 @@ document.querySelector('.hamburger').addEventListener('click', function(){
             topLine.classList.toggle('v5');
             midLine.classList.toggle('v5');
             botLine.classList.toggle('v5');
+            document.querySelector('.hamburger').classList.toggle('rotate');
             break;
     }
+
+    topLine.classList.toggle('active');
+    midLine.classList.toggle('active');
+    botLine.classList.toggle('active');
 
     void topLine.offsetWidth;
     void midLine.offsetWidth;
